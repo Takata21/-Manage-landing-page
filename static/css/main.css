@@ -1,0 +1,77 @@
+@import url(./normalize.css);
+.header {
+  height: 26.3125rem;
+  background-image: url(../images/bg-tablet-pattern.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top -2.5rem right -2.5rem; }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0 1.5625rem; }
+  .header__logo {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.4375rem;
+    width: 7.1875rem;
+    cursor: pointer;
+    display: block; }
+  .header__menu-icon {
+    background-image: url(../images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.5625rem;
+    height: 1.125rem;
+    cursor: pointer; }
+    .header__menu-icon.active {
+      background-image: url(../images/icon-close.svg); }
+  .header__menu-container {
+    display: none;
+    text-align: center;
+    background-color: var(--VaryLightGray);
+    position: absolute;
+    top: 4.375rem;
+    margin: 0 1.5625rem;
+    right: 0;
+    left: 0;
+    color: var(--VeryDarkblue);
+    font-weight: 500;
+    border-radius: 0.3125rem;
+    user-select: none; }
+    .header__menu-container ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    .header__menu-container a {
+      text-decoration: none;
+      padding: 1.125rem 0;
+      display: block; }
+  .header__ilustration {
+    background-image: url(../images/illustration-intro.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 17.8125rem;
+    margin-top: 4.5625rem; }
+
+:root {
+  --BrightRed: hsl(12, 88%, 59%);
+  --DarkBlue: hsl(228, 39%, 23%);
+  --DarkGrayishBlue: hsl(227, 12%, 61%);
+  --VeryDarkBlue: hsl(233, 12%, 13%);
+  --VeryDarkblue: hsl(232, 33%, 37% );
+  --VeryPaleRed: hsl(13, 100%, 96%);
+  --VaryLightGray: hsl(0, 0%, 98%); }
+  :root body {
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 16px; }
+
+.wrapper {
+  padding: 40px 25px; }
+
+/*# sourceMappingURL=main.css.map */

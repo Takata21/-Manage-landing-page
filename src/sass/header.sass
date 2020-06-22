@@ -1,0 +1,65 @@
+.header
+    height: 26.3125rem
+    background-image: url(../images/bg-tablet-pattern.svg)
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: top -2.5rem right -2.5rem
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: fixed
+        right: 0
+        left: 0
+        margin: 0 1.5625rem
+    &__logo
+        background-image: url(../images/logo.svg)
+        background-repeat: no-repeat
+        background-size: contain
+        height: 1.4375rem
+        width: 7.1875rem
+        cursor: pointer
+        display: block    
+    &__menu
+        &-icon
+            background-image: url(../images/icon-hamburger.svg)
+            background-repeat: no-repeat
+            background-size: contain
+            width: 1.5625rem
+            height: 1.125rem
+            cursor: pointer
+            &.active
+                background-image: url(../images/icon-close.svg)
+
+        &-container
+            display: none
+            text-align: center
+            background-color: var(--VaryLightGray)
+            position: absolute
+            top: 4.375rem
+            margin: 0 1.5625rem
+            right: 0
+            left: 0
+            color: var(--VeryDarkblue)
+            font-weight: 500
+            border-radius: 0.3125rem
+            user-select: none
+            ul
+                list-style: none
+                margin: 0
+                padding: 0
+            a
+                text-decoration: none
+                padding: 1.125rem 0
+                display: block
+
+                
+        &-iten
+    &__ilustration
+        // border: 0.0625rem solid red 
+        background-image: url(../images/illustration-intro.svg)
+        background-repeat: no-repeat
+        background-size: contain
+        width: 100%
+        height: 17.8125rem
+        margin-top: 4.5625rem

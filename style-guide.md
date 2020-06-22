@@ -39,3 +39,9 @@ For the social icons, you can use the icons provided or a font icon library. Som
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
