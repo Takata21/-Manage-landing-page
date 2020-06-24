@@ -12,8 +12,7 @@
     position: fixed;
     right: 0;
     left: 0;
-    margin: 0 1.5625rem;
-    display: none; }
+    margin: 0 1.5625rem; }
   .header__logo {
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
@@ -105,13 +104,60 @@
       font-size: 0.8em;
       line-height: 20px; }
 
+.footer {
+  text-align: center;
+  background-color: var(--VeryDarkBlue); }
+  .footer__simplify {
+    padding: 37px;
+    background-color: var(--BrightRed);
+    background-image: url(../images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-y: center; }
+    .footer__simplify-h2 {
+      color: white;
+      font-size: 2.6em; }
+  .footer__email {
+    padding: 51px 23px;
+    display: flex;
+    justify-content: space-between; }
+    .footer__email-text {
+      min-width: 240px;
+      font-size: 0.7em;
+      padding: 14px;
+      border-radius: 25px;
+      border-style: none; }
+  .footer__links {
+    columns: 2; }
+    .footer__links-link {
+      color: white;
+      padding-top: 25px;
+      display: block;
+      text-decoration: none; }
+  .footer__social {
+    padding: 52px 39px;
+    display: flex;
+    justify-content: space-between; }
+    .footer__social-facebook, .footer__social-youtube, .footer__social-twitter, .footer__social-pinterest, .footer__social-instagram {
+      width: 33px;
+      height: 33px; }
+  .footer__logo {
+    margin-bottom: 55px; }
+  .footer__copyright {
+    color: var(--VeryPaleRed);
+    font-size: 0.7em; }
+  .footer__attribution {
+    padding: 20px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--VeryPaleRed); }
+    .footer__attribution a {
+      color: #3e52a3; }
+
 :root {
   --BrightRed: hsl(12, 88%, 59%);
-  --LightRed: hsl(23, 8%, 99% );
   --DarkBlue: hsl(228, 39%, 23%);
   --DarkGrayishBlue: hsl(227, 12%, 61%);
   --VeryDarkBlue: hsl(233, 12%, 13%);
-  --VeryDarkblue: hsl(232, 33%, 37% );
   --VeryPaleRed: hsl(13, 100%, 96%);
   --VaryLightGray: hsl(0, 0%, 98%); }
   :root body {
@@ -125,5 +171,22 @@
 
 .show {
   display: none; }
+
+.u-btn {
+  background-color: var(--BrightRed);
+  color: var(--VaryLightGray);
+  border-style: none;
+  border-radius: 20px;
+  font-size: 0.6em;
+  padding: 18px 32px 16px;
+  cursor: pointer; }
+  .u-btn.footer {
+    background-color: white;
+    color: var(--BrightRed);
+    font-weight: 700; }
+  .u-btn.email {
+    min-width: 80px;
+    text-transform: uppercase;
+    font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */

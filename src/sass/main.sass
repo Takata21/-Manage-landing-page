@@ -2,13 +2,13 @@
 @import ./header.sass
 @import ./hero.sass
 @import ./features.sass
+@import ./slider.sass
+@import ./footer.sass
 \:root
     --BrightRed: hsl(12, 88%, 59%)
-    --LightRed: hsl(23, 8%, 99% )
     --DarkBlue: hsl(228, 39%, 23%)
     --DarkGrayishBlue: hsl(227, 12%, 61%)
     --VeryDarkBlue: hsl(233, 12%, 13%)
-    --VeryDarkblue: hsl(232, 33%, 37% )
     --VeryPaleRed: hsl(13, 100%, 96%)
     --VaryLightGray: hsl(0, 0%, 98%)
 
@@ -23,3 +23,19 @@
      
 .show
     display: none
+.u-btn
+    background-color: var(--BrightRed)
+    color: var(--VaryLightGray)
+    border-style: none
+    border-radius: 20px
+    font-size: .6em
+    padding: 18px 32px 16px
+    cursor: pointer
+    &.footer
+        background-color: white
+        color: var(--BrightRed)
+        font-weight: 700
+    &.email
+        min-width: 80px
+        text-transform: uppercase
+        font-weight: 700
