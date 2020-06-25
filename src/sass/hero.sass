@@ -2,11 +2,35 @@
     // border: 1px solid red
     text-align: center
     color: var(--DarkBlue)
+    position: relative
+    z-index: 3
+    &__background
+        background-image: url(../images/bg-tablet-pattern.svg)
+        height: 261px
+        width: 371px
+        position: absolute
+        background-size: contain
+        background-repeat: no-repeat
+        bottom: 218px
+        right: -250px
+        z-index: 1
+    &__question
+        &-h2
+            margin-top: 104px
+            font-size: 2em
+            padding: 0 35px
     &__information
         &-h1
             margin-top: 0
         &-p
+            line-height: 18px
             color: var(--DarkGrayishBlue)
+            margin: 31px 0 62px
+            &.first
+                padding: 0 17px 
+                z-index: 2
+                position: relative
+                
         &-button
             background-color: var(--BrightRed)
             color: var(--VaryLightGray)
@@ -15,6 +39,8 @@
             font-size: .6em
             padding: 18px 32px 16px
             cursor: pointer
+            position: relative
+            z-index: 2
     &__ilustration
         // border: 0.0625rem solid red 
         background-image: url(../images/illustration-intro.svg)

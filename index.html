@@ -12,8 +12,11 @@
 </head>
 
 <body>
+    <!-- <div class="background">
+        <img src="./static/images/bg-tablet-pattern.svg" alt="" class="background__img">
+    </div> -->
     <header class="header">
-        <div class="wrapper">
+        <div class="wrapper__header">
             <div class="header__container">
                 <a href="#" class="header__logo"></a>
                 <p class="header__menu-icon" id="header__menu-icon"></p>
@@ -31,16 +34,18 @@
         </div>
     </header>
 
+
     <main class="main">
         <div class="wrapper__main">
             <div class="hero ">
+                <div class="hero__background"></div>
                 <div class="hero__ilustration">
                 </div>
                 <div class="hero__information">
                     <h1 class="hero__information-h1">
                         Bring everyone together to build better products.
                     </h1>
-                    <p class="hero__information-p">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view. </p>
+                    <p class="hero__information-p first">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view. </p>
                     <button class="hero__information-button">Get Started</button>
                 </div>
                 <div class="hero__question">
@@ -75,11 +80,40 @@
 
         </div>
 
+        <div class="slider">
+            <h1 class="slider__slide-h1"> What they’ve said</h1>
+            <div class="slider__slide active">
+                <img class="slider__slide-img" src="./static/images/avatar-ali.png"></img>
+                <span class="slider__slide-name">Anisha Li</span>
+                <p class="slider__slide-description">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </div>
+
+            <div class="slider__slide">
+                <img class="slider__slide-img" src="./static/images/avatar-anisha.png"></img>
+                <span class="slider__slide-name">Ali Bravo</span>
+                <p class="slider__slide-description">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+            </div>
+
+            <div class="slider__slide">
+                <img class="slider__slide-img" src="./static/images/avatar-richard.png"></img>
+                <span class="slider__slide-name">Richard Watts</span>
+                <p class="slider__slide-description">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+            </div>
+            <div class="slider__slide">
+                <img class="slider__slide-img" src="./static/images/avatar-shanai.png"></img>
+                <span class="slider__slide-name"> Shanai Gough</span>
+                <p class="slider__slide-description"> “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+            </div>
+            <div class="slider__indicadores">
+                <span class="slider__indicadores-indicador active"></span>
+
+            </div>
+
+            <button class="u-btn slider">Get Started</button>
+        </div>
+
 
     </main>
-    <!-- What they’ve said Anisha Li “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.” Ali Bravo “We have been able to cancel so many other subscriptions since using Manage.
-    There is no more cross-channel confusion and everyone is much more focused.” Richard Watts “Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!” Shanai Gough “Their
-    software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.” Get Started -->
     <footer class="footer">
         <div class="footer__simplify">
             <h2 class="footer__simplify-h2"> Simplify how your team works today.</h2>
