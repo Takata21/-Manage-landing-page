@@ -23,7 +23,9 @@
         height: 1.4375rem
         width: 7.1875rem
         cursor: pointer
-        display: block    
+        display: block
+        /*------------------------------*/
+            
     &__menu
         &-icon
             background-image: url(../images/icon-hamburger.svg)
@@ -48,6 +50,39 @@
             font-weight: 500
             border-radius: 0.3125rem
             user-select: none
+            animation: backInDown
+            animation-duration: .5s
+
+            @-webkit-keyframes backInDown 
+                0% 
+                    -webkit-transform: translateY(-1200px) scale(.7)
+                    transform: translateY(-1200px) 
+                    opacity: .7
+                
+
+                80% 
+                    -webkit-transform: translateY(0) scale(.7)
+                    transform: translateY(0) 
+                    opacity: .7
+                
+
+                to  
+                    -webkit-transform: scale(1)
+                    transform: scale(1)
+                    opacity: 1
+                
+            @keyframes backInRight
+                0%
+                    transform: translateX(2000px) scale(.7)
+                    opacity: .7
+                80%
+                    transform: translateX(0) scale(.7)
+                    opacity: .7
+                to
+                    transform: scale(1)
+                    opacity: 1
+                    
+            
             ul
                 list-style: none
                 margin: 0
@@ -56,3 +91,5 @@
                 text-decoration: none
                 padding: 1.125rem 0
                 display: block
+
+

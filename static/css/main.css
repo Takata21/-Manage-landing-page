@@ -18,7 +18,8 @@
     height: 1.4375rem;
     width: 7.1875rem;
     cursor: pointer;
-    display: block; }
+    display: block;
+    /*------------------------------ */ }
   .header__menu-icon {
     background-image: url(../images/icon-hamburger.svg);
     background-repeat: no-repeat;
@@ -40,7 +41,32 @@
     color: var(--VeryDarkblue);
     font-weight: 500;
     border-radius: 0.3125rem;
-    user-select: none; }
+    user-select: none;
+    animation: backInDown;
+    animation-duration: 0.5s; }
+@-webkit-keyframes backInDown {
+  0% {
+    -webkit-transform: translateY(-1200px) scale(0.7);
+    transform: translateY(-1200px);
+    opacity: 0.7; }
+  80% {
+    -webkit-transform: translateY(0) scale(0.7);
+    transform: translateY(0);
+    opacity: 0.7; }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+@keyframes backInRight {
+  0% {
+    transform: translateX(2000px) scale(0.7);
+    opacity: 0.7; }
+  80% {
+    transform: translateX(0) scale(0.7);
+    opacity: 0.7; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
     .header__menu-container ul {
       list-style: none;
       margin: 0;
@@ -126,17 +152,31 @@
       font-size: 0.8em;
       line-height: 20px; }
 
+.swiper-container {
+  width: 300px;
+  height: 300px; }
+
 .slider {
   text-align: center;
-  padding: 0 53px; }
+  padding: 0 53px;
+  position: relative;
+  height: 546px; }
+  .slider__bi {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .slider__slide {
     background-color: var(--VaryLightGray);
-    display: none; }
+    position: absolute;
+    visibility: hidden; }
+    .slider__slide-container {
+      position: relative; }
     .slider__slide-h1 {
       font-size: 1.9em;
       margin: 80px 0; }
     .slider__slide.active {
-      display: block; }
+      visibility: visible; }
     .slider__slide-img {
       width: 74px;
       height: 74px;
@@ -149,13 +189,14 @@
       padding-bottom: 47px; }
   .slider__indicadores {
     margin: 45px 0; }
-    .slider__indicadores-indicador {
+    .slider__indicadores span {
       display: inline-block;
       width: 8px;
       height: 8px;
       border: 1px solid var(--BrightRed);
-      border-radius: 50px; }
-      .slider__indicadores-indicador.active {
+      border-radius: 50px;
+      margin-right: 5px; }
+      .slider__indicadores span.active {
         background-color: var(--BrightRed); }
 
 .footer {
@@ -250,7 +291,9 @@
   .u-btn.slider {
     margin-bottom: 10px;
     -webkit-box-shadow: 0 2px 3px 2px rgba(243, 97, 60, 0.2);
-    box-shadow: 0 2px 3px 2px rgba(243, 97, 60, 0.2); }
+    box-shadow: 0 2px 3px 2px rgba(243, 97, 60, 0.2);
+    height: 44px;
+    width: 139px; }
 
 .main {
   overflow: hidden; }
