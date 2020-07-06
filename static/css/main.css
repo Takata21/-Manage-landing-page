@@ -1,279 +1,43 @@
-@import url(./normalize.css);
-.header {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  background-color: white;
-  padding: 40px 0 0;
-  z-index: 100; }
-  .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .header__logo {
-    background-image: url(../images/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 1.4375rem;
-    width: 7.1875rem;
-    cursor: pointer;
-    display: block;
-    /*------------------------------ */ }
-  .header__menu-icon {
-    background-image: url(../images/icon-hamburger.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 1.5625rem;
-    height: 1.125rem;
-    cursor: pointer; }
-    .header__menu-icon.active {
-      background-image: url(../images/icon-close.svg); }
-  .header__menu-container {
-    display: none;
-    text-align: center;
-    background-color: var(--VaryLightGray);
-    position: absolute;
-    top: 5.375rem;
-    margin: 0 1.5625rem;
-    right: 0;
-    left: 0;
-    color: var(--VeryDarkblue);
-    font-weight: 500;
-    border-radius: 0.3125rem;
-    user-select: none;
-    animation: backInDown;
-    animation-duration: 0.5s; }
-@-webkit-keyframes backInDown {
-  0% {
-    -webkit-transform: translateY(-1200px) scale(0.7);
-    transform: translateY(-1200px);
-    opacity: 0.7; }
-  80% {
-    -webkit-transform: translateY(0) scale(0.7);
-    transform: translateY(0);
-    opacity: 0.7; }
-  to {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1; } }
-@keyframes backInRight {
-  0% {
-    transform: translateX(2000px) scale(0.7);
-    opacity: 0.7; }
-  80% {
-    transform: translateX(0) scale(0.7);
-    opacity: 0.7; }
-  to {
-    transform: scale(1);
-    opacity: 1; } }
-    .header__menu-container ul {
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-    .header__menu-container a {
-      text-decoration: none;
-      padding: 1.125rem 0;
-      display: block; }
+/*
+Error: Invalid mixin "======".
+        on line 53 of ./src/sass/main.sass
 
-.hero {
-  text-align: center;
-  color: var(--DarkBlue);
-  position: relative;
-  z-index: 3; }
-  .hero__background {
-    background-image: url(../images/bg-tablet-pattern.svg);
-    height: 261px;
-    width: 371px;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: 218px;
-    right: -250px;
-    z-index: 1; }
-  .hero__question-h2 {
-    margin-top: 104px;
-    font-size: 2em;
-    padding: 0 35px; }
-  .hero__information-h1 {
-    margin-top: 0; }
-  .hero__information-p {
-    line-height: 18px;
-    color: var(--DarkGrayishBlue);
-    margin: 31px 0 62px; }
-    .hero__information-p.first {
-      padding: 0 17px;
-      z-index: 2;
-      position: relative; }
-  .hero__information-button {
-    background-color: var(--BrightRed);
-    color: var(--VaryLightGray);
-    border-style: none;
-    border-radius: 20px;
-    font-size: 0.6em;
-    padding: 18px 32px 16px;
-    cursor: pointer;
-    position: relative;
-    z-index: 2; }
-  .hero__ilustration {
-    background-image: url(../images/illustration-intro.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 17.8125rem;
-    margin-top: 5.6875rem; }
+48:         box-shadow: 0 2px 3px 2px rgba(243,97 ,60 ,.2 )
+49:         height: 44px
+50:         width: 139px
+51: <<<<<<< HEAD
+52:         margin: 20px
+53: =======
+54:         margin: 25px
+55: >>>>>>> swiper
 
-.features {
-  padding: 0 25px; }
-  .features__iten {
-    position: relative; }
-    .features__iten-number {
-      display: block;
-      text-align: center;
-      background-color: var(--BrightRed);
-      color: white;
-      border-radius: 25px;
-      padding: 10px;
-      width: 44px; }
-    .features__iten-title {
-      color: var(--DarkBlue);
-      position: absolute;
-      top: -13px;
-      right: -114px;
-      background-color: rgba(243, 97, 64, 0.1);
-      border-radius: 25px;
-      padding: 12px 40px;
-      font-weight: 700;
-      font-size: 0.8rem;
-      width: 324px;
-      margin-left: -20px; }
-    .features__iten-text {
-      color: var(--DarkGrayishBlue);
-      font-size: 0.8em;
-      line-height: 20px; }
-
-.slider {
-  text-align: center;
-  height: 546px; }
-  .slider__slide {
-    background-color: var(--DarkGrayishBlue); }
-  .slider__h1 {
-    font-size: 1.9em;
-    margin: 80px 0;
-    color: var(--DarkBlue); }
-  .slider__img {
-    width: 74px;
-    height: 74px; }
-  .slider__name {
-    display: block;
-    margin: 30px 0; }
-  .slider__description {
-    color: var(--DarkGrayishBlue);
-    padding-bottom: 47px; }
-
-.swiper-slide {
-  background-color: var(--VaryLightGray); }
-.swiper-container {
-  width: 100vw;
-  height: auto; }
-.swiper-pagination-bullet-active {
-  background: var(--BrightRed); }
-
-.footer {
-  text-align: center;
-  background-color: var(--VeryDarkBlue); }
-  .footer__simplify {
-    margin-top: 41px;
-    padding: 37px;
-    background-color: var(--BrightRed);
-    background-image: url(../images/bg-simplify-section-mobile.svg);
-    background-repeat: no-repeat;
-    background-position-y: center; }
-    .footer__simplify-h2 {
-      color: white;
-      font-size: 2.6em; }
-  .footer__email {
-    padding: 51px 23px;
-    display: flex;
-    justify-content: space-between; }
-    .footer__email-text {
-      margin-right: 10px;
-      width: 240px;
-      font-size: 0.7em;
-      padding: 14px;
-      border-radius: 25px;
-      border-style: none; }
-  .footer__links {
-    columns: 2; }
-    .footer__links-link {
-      color: white;
-      padding-top: 25px;
-      display: block;
-      text-decoration: none; }
-  .footer__social {
-    padding: 52px 39px;
-    display: flex;
-    justify-content: space-between; }
-    .footer__social-facebook, .footer__social-youtube, .footer__social-twitter, .footer__social-pinterest, .footer__social-instagram {
-      width: 33px;
-      height: 33px; }
-  .footer__logo {
-    margin-bottom: 55px; }
-  .footer__copyright {
-    color: var(--VeryPaleRed);
-    font-size: 0.7em; }
-  .footer__attribution {
-    padding: 20px;
-    font-size: 11px;
-    text-align: center;
-    color: var(--VeryPaleRed); }
-    .footer__attribution a {
-      color: #3e52a3;
-      text-decoration: none; }
-
-:root {
-  --BrightRed: hsl(12, 88%, 59%);
-  --DarkBlue: hsl(228, 39%, 23%);
-  --DarkGrayishBlue: hsl(227, 12%, 61%);
-  --VeryDarkBlue: hsl(233, 12%, 13%);
-  --VeryPaleRed: hsl(13, 100%, 96%);
-  --VaryLightGray: hsl(0, 0%, 98%); }
-  :root body {
-    font-family: "Be Vietnam", sans-serif;
-    font-size: 16px; }
-
-.wrapper {
-  padding: 40px 25px; }
-  .wrapper__header {
-    padding: 0 25px; }
-  .wrapper__main {
-    padding: 0 25px; }
-
-.show {
-  display: none; }
-
-.u-btn {
-  background-color: var(--BrightRed);
-  color: var(--VaryLightGray);
-  border-style: none;
-  border-radius: 20px;
-  font-size: 0.6em;
-  padding: 18px 32px 16px;
-  cursor: pointer; }
-  .u-btn.footer {
-    background-color: white;
-    color: var(--BrightRed);
-    font-weight: 700; }
-  .u-btn.email {
-    width: 80px;
-    text-transform: uppercase;
-    font-weight: 700; }
-  .u-btn.slider {
-    margin-bottom: 10px;
-    -webkit-box-shadow: 0 2px 3px 2px rgba(243, 97, 60, 0.2);
-    box-shadow: 0 2px 3px 2px rgba(243, 97, 60, 0.2);
-    height: 44px;
-    width: 139px;
-    margin: 20px; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+./src/sass/main.sass:53
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:1119:in `parse_mixin_definition'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:658:in `parse_line'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:417:in `_to_tree'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid mixin \"======\".\A         on line 53 of ./src/sass/main.sass\A \A 48:         box-shadow: 0 2px 3px 2px rgba(243,97 ,60 ,.2 )\A 49:         height: 44px\A 50:         width: 139px\A 51: <<<<<<< HEAD\A 52:         margin: 20px\A 53: =======\A 54:         margin: 25px\A 55: >>>>>>> swiper"; }
