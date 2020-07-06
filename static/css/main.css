@@ -154,7 +154,6 @@
 
 .slider {
   text-align: center;
-  padding: 0 53px;
   height: 546px; }
   .slider__slide {
     background-color: var(--DarkGrayishBlue); }
@@ -175,7 +174,7 @@
 .swiper-slide {
   background-color: var(--VaryLightGray); }
 .swiper-container {
-  width: auto;
+  width: 100vw;
   height: auto; }
 .swiper-pagination-bullet-active {
   background: var(--BrightRed); }
